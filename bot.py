@@ -109,9 +109,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_id = update.effective_user.id
 
-    # Берем ADMIN_ID из .env
     ALLOWED_USERS = {
-        ADMIN_ID
+        8184068451
     }
 
     # Секретные invite коды
