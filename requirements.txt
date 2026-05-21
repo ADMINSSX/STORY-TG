@@ -1,0 +1,12 @@
+python-dotenv
+python-telegram-bot
+telethon
+fastapi
+uvicorn
+python-multipart
+pillow
+supabase
+psycopg2-binary
+python-socks
+PySocks
+qrcode[pil]
