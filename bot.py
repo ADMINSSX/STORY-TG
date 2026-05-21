@@ -7,6 +7,7 @@ import logging
 import tempfile
 from datetime import datetime, timedelta
 from supabase_files import upload_story_file
+from config import ADMIN_ID
 
 logging.basicConfig(
     level=logging.INFO,
@@ -108,9 +109,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_id = update.effective_user.id
 
-    # ТВОЙ TELEGRAM ID
+    # Берем ADMIN_ID из .env
     ALLOWED_USERS = {
-        7565144360
+        ADMIN_ID
     }
 
     # Секретные invite коды
